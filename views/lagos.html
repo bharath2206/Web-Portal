@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Lagos</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">  
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">                
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">           
+    <link rel="stylesheet" href="css/bootstrap.min.css">                                      
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" href="css/main.css">                                   
+
+      </head>
+
+      <body>
+        <div class="rm-main-content" id="top">
+            <div class="">
+                <div class="container_menu" onclick="toggle_menu(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>    
+            <div class="rm-top-bar" id="rm-top-bar">
+                <div class="row">
+                    <nav class="navbar navbar-expand-lg narbar-light">
+                        <div id="mainNav" class="collapse navbar-collapse rm-bg-white">
+                            <ul class=" ml-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link " href="#top">Portugal</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#rm-section-2">Places</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/logout">Logout</a>
+                                </li>                                
+                                <li class="toggle-switch nav-item" >
+                                    <div class="theme nav-link" id="root">
+                                        <button id="toggleSwitch"></button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>                            
+                    </nav>
+                </div> 
+            </div>
+
+        <div class="mx-auto">
+            <section class="">
+                <div class=" rm-banner-bg-2">
+                    <div class="">
+                        <div class="">
+                            <div class="col-xs-12">
+                                <div class="rm-banner-header">
+                                    <h1 style="font-size: 5rem;" class="text-uppercase rm-banner-title">Lagos</h1>
+                                </div>    
+                            </div>                      
+                        </div> 
+                        <div class="rm-banner-overlay-1"></div>
+                    </div>                    
+                </div>                      
+            </section>
+
+            <section class="p-5 rm-container-outer rm-bg-gray">            
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 mx-auto rm-about-text-wrap text-center">                        
+                            <p class="mb-4">Lagos (Portuguese : "lakes") is a city at the mouth of Bensafrim River and along the Atlantic Ocean, 
+in the Barlavento region of the Algarve, in southern Portugal..</p>
+                            <button onclick="var upload = getElementById('add_images');if(upload.style.display=='none'){upload.style.display='block'}else {upload.style.display='none'}" class="text-uppercase btn-primary rm-btn">Add Images</button>
+                            <div id="add_images" style="margin-top:2%;display:none;">
+                                <span id="pageValue" style="display: none;" >lagos</span>
+                                <form onsubmit = "return validateImage()" action="/upload" method="POST" enctype="multipart/form-data">
+                                    <input type="text" style="display: none;" name="dest" value="lagos">
+                                    <input onChange="return validateImage()" id="inputFiles" type="file"  name="file" >
+                                    <button type="submit" class="button">Upload</button>
+                                    <h6 style="margin-top:1%;color:var(--foreground);"><span id="fileMsg" style="display:none"></span><br><span id="fileSize">Size limit : 6MB</span><br><span id="fileRes">Resolution limit: 3840 px * 2160 px</span></h6>
+                                </form>
+                            </div>                            
+                        </div>                           
+                        </div>
+                    </div>
+                </div>            
+            </section>
+            
+            <section id="rm-section-2"  class="">
+                <div class="cont_2" id="load_images">
+                    <img class="images1" src="./img/lagos/2.jpg" >
+                    <img class="images1" src="./img/lagos/4.jpg" >
+                    <img class="images1" src="./img/lagos/5.jpg" >
+                    <img class="images1" src="./img/lagos/3.jpg" >
+                    <img class="images1" src="./img/lagos/13.jpg" >
+                    <img class="images1" src="./img/lagos/14.jpg" >
+                    <img class="images1" src="./img/lagos/15.jpg" >
+                    <img class="images1" src="./img/lagos/16.jpg" >
+                    <img class="images1" src="./img/lagos/7.jpg" >
+                    <img class="images1" src="./img/lagos/8.jpg" >
+                    <img class="images1" src="./img/lagos/12.jpg" >
+                    <img class="images1" src="./img/lagos/11.jpg" >
+                </div>
+            </section>
+  
+
+            <footer style="background-color:skyblue; margin-top:2%" class="rm-container-outer" >
+               <p class="mb-0">Copyright ©  PORTUGAL - <span class="rm-current-year">2021</span>
+            </footer>
+        </div>
+    </div> 
+
+    
+    <script src="js/jquery.js"></script>           
+    <script src="js/popper.js"></script>                  
+    <script src="js/bootstrap.js"></script>                
+    <script src="js/jquery.singlePageNav.js"></script>     
+    <script src="slick/slick.min.js"></script>                
+    <script src="js/jquery.scrollTo.js"></script>         
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="js/ThemeToggle.js"></script>
+    <script src="js/ToggleScroll.js"></script>   
+    <script src="js/index.js"></script> 
+             
+
+</body>
+</html>
