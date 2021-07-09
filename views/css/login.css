@@ -1,0 +1,40 @@
+#login_container {
+    margin: 8% 0% 0% 40%;
+    width: 20%;
+}
+
+#login_heading {
+    font-size: 1.5vw;
+}
+
+#username {
+    font-size: 1vw;
+    margin: 0% 0% 0% 0%;
+}
+
+
+#password {
+    font-size: 1vw;
+    margin: 10% 0% 0% 0%;
+}
+
+#submit {
+    font-size: 1.2vw;
+    margin: 20% 0% 0% 0%;
+}
+
+#signup_container {
+    margin: 40% 0% 0% 0%;
+}
+
+#txt_1 {
+    font-size: 0.8vw;
+    margin: 0% 0% 0% -5%;
+    float: left;
+}
+
+#sign_up {
+    font-size: 0.9vw;
+    float: right;
+    margin: -0.5% 0% 15% -10%;
+}
